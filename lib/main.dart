@@ -16,9 +16,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyStatelessWidget extends StatelessWidget {
+class MyStatelessWidget extends StatefulWidget {
   const MyStatelessWidget({Key? key}) : super(key: key);
 
+  @override
+  State<MyStatelessWidget> createState() => _MyStatelessWidgetState();
+}
+
+class _MyStatelessWidgetState extends State<MyStatelessWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
